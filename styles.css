@@ -1,0 +1,75 @@
+:root{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --heavy-green: #064e3b;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #a7f3d0;
+}
+.header{
+    width: 46%;
+    height: 100px;
+    background-color: var(--heavy-green);
+    color: #ecfdf5;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 0 0 20px 0;
+}
+header{
+    display: flex;
+}
+.book-icon{
+    width: 50px;
+    height: 50px;
+    fill: #ecfdf5;
+    margin-left: 25px;
+}
+.title{
+    font-size: 1.7rem;
+    margin-left: 10px;
+}
+.subtitle{
+    align-content: first baseline;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+.plus-icon{
+    width: 25px;
+    height: 25px;
+    fill: white;
+    margin-right: 8px;
+}
+.add{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 60px;
+    align-self: center;
+    margin-left: 35px;
+    background-color: var(--heavy-green);
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add:hover{
+    background-color: #ecfdf5;
+    color: var(--heavy-green);
+    .plus-icon{
+        fill: var(--heavy-green);
+    }
+    cursor: pointer;
+}
+.add:active{
+    background-color: white;
+    color: black;
+    .plus-icon{
+        fill: black;
+    }
+}
