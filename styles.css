@@ -162,3 +162,37 @@ input:checked + .toggle-button::before{
 #check{
     display: none;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--heavy-green);
+}
+#book-title , #author-name, #num-pages{
+    width: 100%;
+    margin-top: 10px;
+}
+dialog[open]{
+    border-radius: 5px;
+    border: 5px solid var(--heavy-green);
+    color: var(--heavy-green);
+    padding: 0px 25px 25px 25px;
+    font-size: 1.2rem;
+}
+::backdrop{
+    background-color: rgba(6, 78, 59, 0.4) ;
+}
+.close-dialog, .confirm{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;
+    background-color: var(--heavy-green);
+    color: white;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.close-dialog:hover, .confirm:hover{
+    background-color: var(--light-green);
+    color: var(--heavy-green);
+    border: 1px solid var(--heavy-green);
+}
