@@ -114,32 +114,7 @@ header{
     display: flex;
     gap: 7px;
 }
-.toggle-button{
-    background-color: #d2d2d2;;
-    width: 32px;
-    height: 18px;
-    border-radius: 10px;
-    position: relative;
-    cursor: pointer;
-    transition: 0.2s;
-    margin-top: 2px;
-}
-.toggle-button::before{
-    position: absolute;
-    content: '';
-    background-color: #fff;
-    width: 13px;
-    height: 14px;
-    border-radius: 10px;
-    margin: 2px;
-    transition: 0.2s;
-}
-input:checked + .toggle-button{
-    background-color: var(--heavy-green);
-}
-input:checked + .toggle-button::before{
-    transform: translateX(16px);
-}
+
 .delete{
     grid-column: 2 / 3;
     grid-row: 4 / 5;
@@ -160,7 +135,8 @@ input:checked + .toggle-button::before{
     margin-top: 5px;
 }
 #check{
-    display: none;
+    margin-top: 5px;
+    color: var(--heavy-green);
 }
 form{
     display: flex;
